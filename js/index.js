@@ -22,14 +22,19 @@ toggle.addEventListener('click', (e) => {
 
 function setTime() {
   const time = new Date();
-  const months = time.getMonth();
+  const month = time.getMonth();
   const day = time.getDay();
-  const hours = time.getHourse();
+  const hours = time.getHours();
+
+  const hoursForClock = hours % 12
+  const minuts = time.getMinutes()
+  const seconds = time.getSeconds()
+
+  hourEL.style.transform = `translate(-50%, -100%) rotate(30deg)`
 
 
 
 
-
-  console.log(time)
+  // console.log(time)
 }
 setTime()
