@@ -19,3 +19,17 @@ toggle.addEventListener('click', (e) => {
   }
 
 })
+
+function setTime() {
+  const time = new Date();
+  const months = time.getMonth();
+  const day = time.getDay();
+  const hours = time.getHourse();
+
+
+
+
+
+  console.log(time)
+}
+setTime()
