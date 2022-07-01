@@ -1,0 +1,1 @@
+const hourEL = document.querySelector('.hour')
