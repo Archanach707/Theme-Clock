@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
-
 * {
   box-sizing: border-box;
 }
@@ -16,11 +15,11 @@ html {
 
 html.dark {
   --primary-color: #fff;
-  --secondary-color: #000;
+  --secondary-color: #333;
 }
 
 html.dark {
-  background-color: #000;
+  background-color: #111;
   color: var(--primary-color);
 }
 
@@ -60,7 +59,6 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: #f0f0f0;
 }
 
 .needle {
@@ -69,7 +67,28 @@ body {
   top: 50%;
   left: 50%;
   height: 65px;
-  
+  width: 3px;
+  transform-origin: bottom center;
 }
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+
+
+
+
 
 
