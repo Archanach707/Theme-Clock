@@ -30,11 +30,15 @@ function setTime() {
   const minuts = time.getMinutes()
   const seconds = time.getSeconds()
 
-  hourEL.style.transform = `translate(-50%, -100%) rotate(30deg)`
-
-
-
-
+  hourEL.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`
+  
   // console.log(time)
+}
+
+
+// https://www.thiscodeworks.com/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers-stack-overflow-javascript/603cc9b889ee500014f6252d
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 setTime()
