@@ -10,6 +10,10 @@
   --secondary-color: #fff;
 }
 
+html {
+  transition: all 0.5s ease-in;
+}
+
 html.dark {
   --primary-color: #fff;
   --secondary-color: #000;
@@ -29,4 +33,43 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4PX;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px; 
+}
+
+.toggle:focus {
+  outline: none;
+}
+ 
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  
+}
+
 
